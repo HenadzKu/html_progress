@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenadzKu/cat.git"
+    "url": "git+https://github.com/HenadzKu/html_progress.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HenadzKu/cat/issues"
+    "url": "https://github.com/HenadzKu/html_progress/issues"
   },
-  "homepage": "https://github.com/HenadzKu/cat#readme",
+  "homepage": "https://github.com/HenadzKu/html_progress#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",

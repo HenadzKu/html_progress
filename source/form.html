@@ -49,8 +49,42 @@
     </nav>
 </header>
 
-<main class="page-main">
-
+<main class="page-main page-form">
+    <h1 class="page-form__title">Запись на стрижку</h1>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset fieldset-name">
+            <p class="fieldset-name__field">
+                <label class="field__label visually-hidden" for="last-name">Фамилия</label>
+                <input class="field__input" id="last-name" type="text" placeholder="Фамилия">
+            </p>
+            <p class="fieldset-name__field">
+                <label class="field__label visually-hidden" for="first-name">Имя</label>
+                <input class="field__input" id="first-name" type="text" placeholder="Имя">
+            </p>
+            <p class="fieldset-name__field">
+                <label class="field__label visually-hidden" for="middle-name">Отчество</label>
+                <input class="field__input" id="middle-name" type="text" placeholder="Отчество">
+            </p>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-contacts">
+            <p class="fieldset-contacts__field">
+                <label class="field__label visually-hidden" for="phone">Контактный телефон</label>
+                <input class="field__input" id="phone" type="text" placeholder="Контактный телефон">
+            </p>
+            <p class="fieldset-contacts__field">
+                <label class="field__label visually-hidden" for="e-mail">Контактный e-mail</label>
+                <input class="field__input" id="e-mail" type="text" placeholder="Контактный e-mail">
+            </p>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-addinfo">
+            <p class="fieldset-addinfo__field">
+                <label class="field__label visually-hidden" for="addinfo">Доп. информация для мастера</label>
+                <textarea class="field__textarea" name="addinfo" id="addinfo" cols="30" rows="10">
+                    Доп. информация для мастера
+                </textarea>
+            </p>
+        </fieldset>
+    </form>
 </main>
 <footer class="page-footer">
     <div class="page-footer__wrapper">

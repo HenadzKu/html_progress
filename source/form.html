@@ -55,35 +55,111 @@
         <fieldset class="form__fieldset fieldset-name">
             <p class="fieldset-name__field">
                 <label class="field__label visually-hidden" for="last-name">Фамилия</label>
-                <input class="field__input" id="last-name" type="text" placeholder="Фамилия">
+                <input class="field__entry" id="last-name" type="text" placeholder="Фамилия">
             </p>
             <p class="fieldset-name__field">
                 <label class="field__label visually-hidden" for="first-name">Имя</label>
-                <input class="field__input" id="first-name" type="text" placeholder="Имя">
+                <input class="field__entry" id="first-name" type="text" placeholder="Имя">
             </p>
             <p class="fieldset-name__field">
                 <label class="field__label visually-hidden" for="middle-name">Отчество</label>
-                <input class="field__input" id="middle-name" type="text" placeholder="Отчество">
+                <input class="field__entry" id="middle-name" type="text" placeholder="Отчество">
             </p>
         </fieldset>
         <fieldset class="form__fieldset fieldset-contacts">
             <p class="fieldset-contacts__field">
                 <label class="field__label visually-hidden" for="phone">Контактный телефон</label>
-                <input class="field__input" id="phone" type="text" placeholder="Контактный телефон">
+                <input class="field__entry" id="phone" type="text" placeholder="Контактный телефон">
             </p>
             <p class="fieldset-contacts__field">
                 <label class="field__label visually-hidden" for="e-mail">Контактный e-mail</label>
-                <input class="field__input" id="e-mail" type="text" placeholder="Контактный e-mail">
+                <input class="field__entry" id="e-mail" type="text" placeholder="Контактный e-mail">
             </p>
         </fieldset>
         <fieldset class="form__fieldset fieldset-addinfo">
             <p class="fieldset-addinfo__field">
                 <label class="field__label visually-hidden" for="addinfo">Доп. информация для мастера</label>
-                <textarea class="field__textarea" name="addinfo" id="addinfo" cols="30" rows="10">
-                    Доп. информация для мастера
+                <textarea class="field__textarea" name="addinfo" id="addinfo" cols="30" rows="10">Доп. информация для мастера
                 </textarea>
             </p>
         </fieldset>
+        <fieldset class="form__fieldset beard-selection">
+            <legend class="form__legend">ВЫберите модель бороды:</legend>
+            <ul class="beard-selection__list">
+                <li class="beard-selection__item">
+                    <label for="admiral" class="field-label beard-selection__label">
+                        <input class="beard-selection__radio visually-hidden" type="radio" id="admiral">
+                            адмирал
+                    </label>
+                </li>
+                <li class="beard-selection__item">
+                    <label for="woodcutter" class="field-label beard-selection__label">
+                        <input class="beard-selection__radio visually-hidden" type="radio" id="woodcutter">
+                        лесоруб
+                    </label>
+                </li>
+                <li class="beard-selection__item">
+                    <label for="polar-explorer" class="field-label beard-selection__label">
+                        <input class="beard-selection__radio visually-hidden" type="radio" id="polar-Explorer">
+                        полярник
+                    </label>
+                </li>
+                <li class="beard-selection__item">
+                    <label for="boyar" class="field-label beard-selection__label">
+                        <input class="beard-selection__radio visually-hidden" type="radio" id="boyar">
+                        боярин
+                    </label>
+                </li>
+                <li class="beard-selection__item">
+                    <label for="sage" class="field-label beard-selection__label">
+                        <input class="beard-selection__radio visually-hidden" type="radio" id="sage">
+                        мудрец
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-fieldset additional-service">
+            <legend class="form__legend">Дополнительные услуги:</legend>
+            <ul class="additional-service__list">
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Touch up the beard">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Touch up the beard">
+                        Подкрасить бороду
+                    </label>
+                </li>
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Twist your mustache">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Twist your mustache">
+                        Накрутить усы
+                    </label>
+                </li>
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Comb your beard">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Comb your beard">
+                        Причесать бороду
+                    </label>
+                </li>
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Trim your temples">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Trim your temples">
+                        Подровнять виски
+                    </label>
+                </li>
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Remove gray hair">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Remove gray hair">
+                        Убрать седину
+                    </label>
+                </li>
+                <li class="additional-service__item">
+                    <label class="additional-service__label" for="Polish the bald spot">
+                        <input type="checkbox" class="additional-service__checkbox visually-hidden" id="Polish the bald spot">
+                        Отполировать лысину
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <button class="button form__button" type="submit">Отправить заявку</button>
     </form>
 </main>
 <footer class="page-footer">

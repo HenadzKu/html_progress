@@ -1,0 +1,42 @@
+.stats{
+  background: #242424;
+  .stats__header{
+    background: #ffffff;
+    .stats__slogan{
+      font-weight: bold;
+      font-size: 30px;
+      color: #000000;
+    }
+    .stats__intro{
+      font-weight: bold;
+      font-size: 20px;
+      color: #000000;
+    }
+  }
+  .stats__list{
+    border-collapse: collapse;
+    tr{
+      background: #353535;
+      &:nth-child(2n){
+        background: #4E4E4E;
+      }
+      .stats__value{
+        font-weight: bold;
+        font-size: 40px;
+        text-align: left;
+        color: #ffffff;
+      }
+      .stats__field{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        color: #F7F4F1;
+      }
+    }
+  }
+  .stats__legend{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+  }
+}

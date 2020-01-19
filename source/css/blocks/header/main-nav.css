@@ -1,3 +1,16 @@
 .main-nav {
   background: #826550;
 }
+.main-nav .main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav .main-nav__list .site-list__item a {
+  font-family: PTSansNarrow;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}

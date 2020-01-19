@@ -1,7 +1,22 @@
-.advantages h2 {
+.advantages {
+  background: #242424;
+}
+.advantages .advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.advantages .advantages__list .advantages__item .advantages__title {
   font-family: PTSansNarrow;
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
+  color: #f7f4f1;
+}
+.advantages .advantages__list .advantages__item .advantages__description {
+  font-family: PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
   color: #f7f4f1;
 }

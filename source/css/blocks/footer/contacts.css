@@ -1,0 +1,22 @@
+.contacts .contacts__title {
+  font-family: PTSansNarrow;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.contacts .contacts__text {
+  font-family: PTSans-Narrow;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.contacts .contacts__text .contacts__phone {
+  font-family: PTSansNarrow;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}

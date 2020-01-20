@@ -1,0 +1,27 @@
+.page-photo__our-works .page-photo__title {
+  font-family: PTSansNarrow;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+.page-photo__our-works .our-works__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.page-photo__our-works .our-works__list .our-works__item .photo-title {
+  font-family: PTSansNarrow;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #000000;
+}
+.page-photo__our-works .our-works__list .our-works__item .photo-text {
+  font-family: PTSans-Narrow;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000000;
+}

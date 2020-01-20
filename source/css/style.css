@@ -189,6 +189,11 @@
   text-decoration: none;
   color: #ffffff;
 }
+.social .social__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .copyright .copyright__text {
   font-family: PTSans-Narrow;
   font-size: 18px;

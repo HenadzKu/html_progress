@@ -1,0 +1,30 @@
+.page-photo__price {
+  background: #353535;
+}
+.page-photo__price .price-list {
+  border-collapse: collapse;
+}
+.page-photo__price .price-list .description-of-services {
+  font-family: PTSansNarrow, PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.page-photo__price .price-list .description-of-services span {
+  font-weight: 400;
+}
+.page-photo__price .price-list .cost {
+  font-family: PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.page-photo__price .price__happy-hours .happy-hours__text {
+  font-family: PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #ffffff;
+}

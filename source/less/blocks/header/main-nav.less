@@ -1,9 +1,11 @@
+@import url(../../mixins);
+@import url(../../variables);
 .main-nav{
+  width: 320px;
+  margin: 0 auto;
   background: #826550;
   .main-nav__list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    .reset-list();
     .site-list__item{
       a{
         font-family: PTSansNarrow;
@@ -11,8 +13,28 @@
         line-height: 24px;
         font-weight: 700;
         text-transform: uppercase;
+        text-decoration: none;
         color: #ffffff;
       }
     }
+  }
+}
+
+@media (min-width: @tablet-width){
+  .main-nav{
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper{
+    display:flex;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+  }
+  .site-list{
+    width: 570px;
+  }
+  .user-list{
+    width: 60px;
   }
 }

@@ -1,24 +1,48 @@
+@import "source/less/variables";
 .advantages{
+  width: 320px;
+  margin: 0 auto;
   background: #242424;
-  .advantages__list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    .advantages__item{
-      .advantages__title{
-        font-family: PTSansNarrow;
-        font-size: 30px;
-        line-height: 30px;
-        font-weight: 700;
-        color: #f7f4f1;
-      }
-      .advantages__description{
-        font-family: PTSans-Narrow;
-        font-size: 20px;
-        line-height: 27px;
-        font-weight: 400;
-        color: #f7f4f1;
-      }
-    }
+}
+.advantages__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.advantages__item{
+
+}
+.advantages__title{
+  font-family: PTSansNarrow;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #f7f4f1;
+}
+.advantages__description{
+  font-family: PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #f7f4f1;
+}
+@media (min-width: @tablet-width){
+  .advantages{
+    width: 640px;
   }
+}
+@media (min-width: @desktop-width){
+  .advantages{
+    width: 960px;
+  }
+  .advantages__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages__item{
+    padding-right: 45px;
+    padding-left: 45px;
+    text-align: center;
+  }
+
 }

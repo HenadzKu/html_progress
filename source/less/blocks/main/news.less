@@ -1,51 +1,82 @@
+@import "source/less/variables";
 .news{
+  width: 320px;
+  margin: 0 auto;
   background: #f8f5f2;
-  .news__title{
-    font-family: PTSansNarrow;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
+}
+.news__title{
+  font-family: PTSansNarrow;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+.news__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.news__item{
+  display: flex;
+  justify-content: space-between;
+}
+.news__item:nth-child(3){
+  display: none;
+}
+.news__date-wrapper {
+  width: 50px;
+  height: 50px;
+  background: #000000;
+}
+.news__day {
+  font-family: PTSansNarrow;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.news__month {
+  font-family: PTSans-Narrow;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.news__text{
+  padding: 0;
+  margin: 0;
+  width: 210px;
+  font-family: PTSans-Narrow;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #000000;
+}
+.news__button{
+  font-family: PTSansNarrow;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .news{
+    width: 640px;
   }
   .news__list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    .news__item{
-      .news__date-wrapper {
-        background: #000000;
-        .news__day {
-          font-family: PTSansNarrow;
-          font-size: 30px;
-          line-height: 30px;
-          font-weight: 700;
-          color: #ffffff;
-        }
-        .news__month {
-          font-family: PTSans-Narrow;
-          font-size: 16px;
-          line-height: 30px;
-          font-weight: 400;
-          color: #ffffff;
-        }
-      }
-      .news__text{
-        font-family: PTSans-Narrow;
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 400;
-        color: #000000;
-      }
-    }
+    display: flex;
+    justify-content: space-between;
   }
-  .news__button{
-    font-family: PTSansNarrow;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
+}
+@media (min-width: @desktop-width) {
+  .news{
+    width: 960px;
+  }
+  .news__item:nth-child(3){
+    display: block;
   }
 }

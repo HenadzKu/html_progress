@@ -1,3 +1,5 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .copyright{
   .copyright__text{
     font-family: PTSans-Narrow;
@@ -12,5 +14,16 @@
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
+  }
+}
+@media (min-width: @tablet-width) {
+  .copyright{
+    width: 160px;
+    order: 2;
+  }
+}
+@media (@desktop-width) {
+  .copyright{
+    order: 3;
   }
 }

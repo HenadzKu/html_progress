@@ -1,10 +1,13 @@
 .stats {
+  width: 320px;
+  margin: 0 auto;
   background: #242424;
 }
-.stats .stats__header {
+.stats__header {
+  padding: 30px 40px 25px;
   background: #ffffff;
 }
-.stats .stats__header .stats__slogan {
+.stats__header .stats__slogan {
   font-family: PTSansNarrow;
   font-size: 30px;
   line-height: 30px;
@@ -12,23 +15,24 @@
   text-transform: uppercase;
   color: #000000;
 }
-.stats .stats__header .stats__intro {
+.stats__header .stats__intro {
   font-family: PTSans-Narrow;
   font-size: 20px;
   line-height: 27px;
   font-weight: 400;
   color: #000000;
 }
-.stats .stats__list {
+.stats__list {
+  width: 100%;
   border-collapse: collapse;
 }
-.stats .stats__list tr {
+.stats__list tr {
   background: #353535;
 }
-.stats .stats__list tr:nth-child(2n) {
+.stats__list tr:nth-child(2n) {
   background: #4E4E4E;
 }
-.stats .stats__list tr .stats__value {
+.stats__list tr .stats__value {
   font-family: PTSansNarrow;
   font-size: 40px;
   line-height: 18px;
@@ -36,7 +40,7 @@
   color: #ffffff;
   text-align: left;
 }
-.stats .stats__list tr .stats__field {
+.stats__list tr .stats__field {
   font-family: PTSans-Narrow;
   font-size: 18px;
   line-height: 18px;
@@ -44,11 +48,35 @@
   color: #f7f4f1;
   text-align: right;
 }
-.stats .stats__legend {
+.stats__legend {
   font-family: PTSans-Narrow;
   font-size: 20px;
   line-height: 27px;
   font-weight: 400;
   color: #ffffff;
   opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+  }
+  .stats__list {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .stats {
+    display: -webkit-box;
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  .stats__list {
+    width: 640px;
+  }
+  .stats__header {
+    width: 240px;
+  }
 }

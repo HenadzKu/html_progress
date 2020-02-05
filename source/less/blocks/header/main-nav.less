@@ -1,5 +1,5 @@
-@import url(../../mixins);
-@import url(../../variables);
+@import "source/less/mixins";
+@import "source/less/variables";
 .main-nav{
   width: 320px;
   margin: 0 auto;
@@ -36,5 +36,16 @@
   }
   .user-list{
     width: 60px;
+  }
+}
+@media (min-width: @desktop-width){
+  .main-nav__wrapper{
+    width: 960px;
+  }
+  .site-list{
+    width: 780px;
+  }
+  .user-list{
+    width: 160px;
   }
 }

@@ -1,55 +1,82 @@
+@import "source/less/variables";
 .stats{
+  width: 320px;
+  margin: 0 auto;
   background: #242424;
-  .stats__header{
-    background: #ffffff;
-    .stats__slogan{
-      font-family: PTSansNarrow;
-      font-size: 30px;
-      line-height: 30px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #000000;
-    }
-    .stats__intro{
-      font-family: PTSans-Narrow;
-      font-size: 20px;
-      line-height: 27px;
-      font-weight: 400;
-      color: #000000;
-    }
+}
+.stats__header{
+  padding: 30px 40px 25px;
+  background: #ffffff;
+  .stats__slogan{
+    font-family: PTSansNarrow;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
   }
-  .stats__list{
-    border-collapse: collapse;
-    tr{
-      background: #353535;
-      &:nth-child(2n){
-        background: #4E4E4E;
-      }
-      .stats__value{
-        font-family: PTSansNarrow;
-        font-size: 40px;
-        line-height: 18px;
-        font-weight: 700;
-        color: #ffffff;
-        text-align: left;
-      }
-      .stats__field{
-        font-family: PTSans-Narrow;
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: 400;
-        color: #f7f4f1;
-        text-align: right;
-      }
-    }
-  }
-  .stats__legend{
+  .stats__intro{
     font-family: PTSans-Narrow;
     font-size: 20px;
     line-height: 27px;
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
+  }
+}
+.stats__list{
+  width: 100%;
+  border-collapse: collapse;
+  tr{
+    background: #353535;
+    &:nth-child(2n){
+      background: #4E4E4E;
+    }
+    .stats__value{
+      font-family: PTSansNarrow;
+      font-size: 40px;
+      line-height: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: left;
+    }
+    .stats__field{
+      font-family: PTSans-Narrow;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #f7f4f1;
+      text-align: right;
+    }
+  }
+}
+.stats__legend{
+  font-family: PTSans-Narrow;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #ffffff;
 
-    opacity: 0.3;
+  opacity: 0.3;
+}
+@media (min-width: @tablet-width) {
+  .stats{
+    width: 640px;
+    margin-top: -185px;
+  }
+  .stats__list{
+    display: flex;
+  }
+}
+@media (min-width: @desktop-width) {
+  .stats{
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  .stats__list{
+    width: 640px;
+  }
+  .stats__header{
+    width: 240px;
   }
 }

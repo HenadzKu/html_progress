@@ -1,7 +1,21 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .social{
   .social__list{
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+}
+@media (min-width: @tablet-width) {
+ .social{
+   width: 100%;
+   order: 3;
+ }
+}
+@media (min-width: @desktop-width) {
+  .social{
+    width: 330px;
+    order: 2;
   }
 }

@@ -1,3 +1,23 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .page-footer{
+  width: 320px;
+  margin: 0 auto;
   background: #292929;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer{
+    width: 640px;
+  }
+  .page-footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer{
+    width: 960px;
+  }
 }

@@ -1,3 +1,21 @@
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .copyright .copyright__text {
   font-family: PTSans-Narrow;
   font-size: 18px;
@@ -11,4 +29,17 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .copyright {
+    width: 160px;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+}
+@media (1200px) {
+  .copyright {
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+  }
 }

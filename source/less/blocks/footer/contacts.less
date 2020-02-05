@@ -1,3 +1,5 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .contacts{
   .contacts__title{
     font-family: PTSansNarrow;
@@ -20,5 +22,11 @@
       text-decoration: none;
       color: #ffffff;
     }
+  }
+}
+@media (min-width: @tablet-width) {
+  .contacts{
+    width: 330px;
+    order: 1;
   }
 }

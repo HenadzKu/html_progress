@@ -1,3 +1,25 @@
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page-photo__our-works {
+  width: 320px;
+  margin: 0 auto;
+}
 .page-photo__our-works .page-photo__title {
   font-family: PTSansNarrow;
   font-size: 30px;
@@ -29,4 +51,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@media (min-width: 768px) {
+  .page-photo__our-works {
+    width: 6400px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-photo__our-works {
+    width: 960px;
+  }
 }

@@ -1,4 +1,8 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .page-form{
+  width: 320px;
+  margin: 0 auto;
   background: #f8f5f2;
   .page-form__title{
     font-family: PTSansNarrow;
@@ -7,5 +11,15 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
+  }
+}
+@media (min-width: @tablet-width) {
+  .page-form{
+    width: 640px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-form{
+    width: 960px;
   }
 }

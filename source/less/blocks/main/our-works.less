@@ -1,4 +1,8 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .page-photo__our-works{
+  width: 320px;
+  margin: 0 auto;
   .page-photo__title{
     font-family: PTSansNarrow;
     font-size: 30px;
@@ -33,5 +37,15 @@
       }
 
     }
+  }
+}
+@media (min-width: @tablet-width) {
+  .page-photo__our-works{
+    width: 6400px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-photo__our-works{
+    width: 960px;
   }
 }

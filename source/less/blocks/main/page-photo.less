@@ -1,3 +1,17 @@
+@import "source/less/mixins";
+@import "source/less/variables";
 .page-photo{
+  width: 320px;
+  margin: 0 auto;
   background: #f8f5f2;
+}
+@media (min-width: @tablet-width) {
+  .page-photo{
+    width: 6400px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-photo{
+    width: 960px;
+  }
 }

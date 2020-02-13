@@ -1,3 +1,33 @@
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-photo {
+  width: 320px;
+  margin: 0 auto;
   background: #f8f5f2;
+}
+@media (min-width: 768px) {
+  .page-photo {
+    width: 6400px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-photo {
+    width: 960px;
+  }
 }

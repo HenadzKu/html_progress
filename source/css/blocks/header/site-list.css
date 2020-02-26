@@ -93,4 +93,24 @@
   .site-list {
     width: 780px;
   }
+  .site-list__item {
+    margin-right: 0;
+  }
+  .site-list__item--active::after {
+    right: 30px;
+    left: 30px;
+  }
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  .site-list__item a[href]:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .site-list__item a[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    opacity: 1;
+  }
 }

@@ -37,7 +37,7 @@
             order: 2;
   }
 }
-@media (1200px) {
+@media (min-width: 1200px) {
   .copyright {
     -webkit-box-ordinal-group: 4;
             order: 3;

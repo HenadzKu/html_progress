@@ -1,7 +1,8 @@
 @import "source/less/variables";
 .stats{
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
+  //width: 320px;
+ //margin: 0 auto;
 }
 .stats__header{
   padding: 30px 40px 25px;
@@ -84,7 +85,10 @@
 }
 @media (min-width: @tablet-width) {
   .stats{
-    width: 640px;
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
+    //width: 640px;
     margin-top: -185px;
   }
   .stats__header{
@@ -103,21 +107,29 @@
     }
   }
   .stats__slogan{
-    width: 282px;
+    width: 50%;
+    //width: 282px;
     margin-bottom: 18px;
     font-size: 40px;
     line-height: 40px;
     text-align: left;
     text-transform: none;
   }
+  .stats__slogan br{
+    display: none;
+  }
   .stats__intro{
-    width: 210px;
+    width: 37.5%;
+    //width: 210px;
     margin-top: 5px;
+    padding: 0;
+    padding-left: 30px;
     text-align: left;
   }
   .stats__legend-top{
     display: block;
-    width: 240px;
+    width: 50%;
+    //width: 240px;
     color: rgba(0,0,0,0.3);
   }
   .stats__legend-bottom{
@@ -128,7 +140,9 @@
     flex-wrap: wrap;
   }
   .stats__list tr{
-    width: 250px;
+    width: 50%;
+    box-sizing: border-box;
+    //width: 250px;
     padding: 25px 35px;
     padding-bottom: 28px;
   }
@@ -154,16 +168,20 @@
 @media (min-width: @desktop-width) {
   .stats{
     display: flex;
-    width: 960px;
+   // width: 960px;
     margin-top: -160px;
   }
   .stats__list{
     display: flex;
     width: 640px;
+    flex-grow: 1;
   }
   .stats__header{
-    display: block;
+    //display: block;
+    flex-grow: 1;
+    flex-direction: column;
     width: 240px;
+    justify-content: flex-start;
     &:before{
       top: 22px;
     }
@@ -177,5 +195,10 @@
     width: auto;
     margin-bottom: 32px;
     padding-right: 30px;
+    padding-left: 0;
+  }
+  .stats__legend-top{
+    width: auto;
+    margin-top: auto;
   }
 }

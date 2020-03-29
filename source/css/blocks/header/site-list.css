@@ -52,6 +52,8 @@
     flex-wrap: wrap;
     -webkit-box-pack: start;
             justify-content: flex-start;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
     width: 570px;
   }
   .site-list__item {

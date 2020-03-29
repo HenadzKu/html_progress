@@ -2,9 +2,9 @@
 @import "source/less/variables";
 .main-nav{
   position: relative;
-  width: 320px;
+  //width: 320px;
   min-height: 51px;
-  margin: 0 auto;
+  //margin: 0 auto;
   background: #826550;
 }
 .main-nav__toggle{
@@ -131,7 +131,8 @@
   .main-nav__wrapper{
     display:flex;
     justify-content: space-between;
-    width: 648px;
+    width: 84%; /*640px/768px= 84% */
+    max-width: 960px; /*960px/.84= 1142px (центровка начнется чуть раньше 1200px)*/
     margin: 0 auto;
   }
   .main-nav__toggle{
@@ -140,6 +141,6 @@
 }
 @media (min-width: @desktop-width){
   .main-nav__wrapper{
-    width: 960px;
+    //width: 960px;
   }
 }
